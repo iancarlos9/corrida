@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Inscrições</title>
+</head>
+<body>
+    <h1>Lista de Inscrições</h1>
+    <ul>
+        {% for inscricao in inscricoes %}
+            <li>
+                Nome: {{ inscricao['nome'] }}<br>
+                Email: {{ inscricao['email'] }}<br>
+                Telefone: {{ inscricao['telefone'] }}<br>
+                Idade: {{ inscricao['idade'] }}<br>
+                Distância: {{ inscricao['distancia'] }}<br><br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
